@@ -45,6 +45,14 @@
             color: #000000;
             font-family:Roboto, sans-serif;
             font-size: 1em;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -moz-user-drag: none;
+            -khtml-user-drag: none;
+            -webkit-user-drag: none;
+            
         }
         .dropbtn {
 			cursor: pointer;
@@ -88,13 +96,6 @@
             float: left;
             width: 80px;
             margin: 0 auto;
-            -moz-user-select: none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-            -moz-user-drag: none;
-            -khtml-user-drag: none;
-            -webkit-user-drag: none;
         }   
         table {
             background-color: #ffffff;
@@ -138,6 +139,28 @@
             text-align: center;
         }
     </style>
+    <script>
+    function logo(id="PUPLOGO",dt=5000){
+        window.addEventListener("load",function(){
+            var logo=document.getElementById(id),style=document.createElement("style");style.type="text/css";
+            style.innerHTML="@keyframes PulseKey{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.logo{animation-name:PulseKey;animation-timing-function:ease-in-out;animation-duration:1s;animation-fill-mode:both;z-index:1000}";
+            document.head.appendChild(style);set();
+    function set(){
+        logo.classList.remove("logo");setTimeout(function(){logo.classList.add("logo");},100);
+    }
+    var move=0;logo.addEventListener("mouseover",function(){
+        if(move==0){move=1;set();setTimeout(function(){move=0;},1500);}
+    });
+    var time,timer;timing();
+    ["mousedown","mousemove","keypress","scroll","touchstart"].forEach(function(n){
+        document.addEventListener(n,timing,true);
+    });
+    function timing(g){
+        (g===1)?time+=time:time=dt;clearTimeout(timer);timer=setTimeout(function(){set();timing(1);},time);
+    }
+    });} 
+    logo();
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,7 +171,7 @@
 <div>
     <div class="dropdown">
         <button class="dropbtn">
-            <img src="https://th.bing.com/th/id/OIP.-RPrfUl9uE5dDG7cP_4sLgHaHa?pid=ImgDet&rs=1" alt="PUP LOGO" class="a"/>
+            <img src="https://th.bing.com/th/id/OIP.-RPrfUl9uE5dDG7cP_4sLgHaHa?pid=ImgDet&rs=1" alt="PUP LOGO" class="a" id="PUPLOGO"/>
         </button>
         <div class="dropdown-content">
             <a href="firstsem.html">1st Semester</a>
