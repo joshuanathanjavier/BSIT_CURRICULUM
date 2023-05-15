@@ -139,14 +139,6 @@
         }
     </style>
     <script>
-    rewrites: async () => {
-    return [
-      {
-        source: '/',
-        destination: '/index.html',
-      },
-    ]
-}
         var url = window.location.href;
         url = url.split('.html')[0];
         //url = url.substring(0, url.lastIndexOf("."));
