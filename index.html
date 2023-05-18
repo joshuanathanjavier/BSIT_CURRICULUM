@@ -2,42 +2,41 @@
 <html lang="en">
 <head>
     <style type="text/css">
-       		/*For Mobile Phones*/
-                [class*="col-"] {
-				width: 100%
-		}
-		@media only screen and (min-width: 600px) {
-			/*For Tablets*/
-		.col-m-1 {width: 8.33%;}
-		.col-m-2 {width: 16.66%;}
-		.col-m-3 {width: 25%;}
-		.col-m-4 {width: 33.33%;}
-		.col-m-5 {width: 41.66%;}
-		.col-m-6 {width: 50%;}
-		.col-m-7 {width: 58.33%;}
-		.col-m-8 {width: 66.66%;}
-		.col-m-9 {width: 75%;}
-		.col-m-10 {width: 83.33%;}
-		.col-m-11 {width: 91.66%;}
-		.col-m-12 {width: 100%;}
-		}
-		@media only screen and (min-width: 768px) {
-			/*For Desktop*/
-		.col-1 {width: 8.33%;}
-		.col-2 {width: 16.66%;}
-		.col-3 {width: 25%;}
-		.col-4 {width: 33.33%;}
-		.col-5 {width: 41.66%;}
-		.col-6 {width: 50%;}
-		.col-7 {width: 58.33%;}
-		.col-8 {width: 66.66%;}
-		.col-9 {width: 75%;}
-		.col-10 {width: 83.33%;}
-		.col-11 {width: 91.66%;}
-		.col-12 {width: 100%;}
-		}
+        /*Phone*/
+        @media only screen and (max-width:320px) {
+            .dropbtn {
+                position: relative;
+		    }
+            .dropdown-content {
+                margin-top: 0.1em;
+            }
+            h1, h3 {
+                margin-right: -33%;
+            }
+        }
+        /*Tablet*/
+        @media only screen and (min-width:321px) and (max-width:768px) {
+            .dropbtn {
+                position: relative;
+            }
+            .dropdown-content {
+                margin-top: 0.1em;
+            }
+            h1, h3 {
+                margin-right: -30%;
+            }
+        }
+       /*Desktop*/
+        @media only screen and (min-width:769px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
         body {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://media-exp1.licdn.com/dms/image/C4D1BAQFLs2jkq5_7zA/company-background_10000/0?e=2159024400&v=beta&t=Fihh7yHQUXT0OnA8Z3XtSqLOGom6b8AdknRDjLRKkpA);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Assets/pupbg.jpg);
             background-attachment: fixed;
             background-repeat: no-repeat;
             max-width: auto;
@@ -58,8 +57,6 @@
 			cursor: pointer;
             background-color: transparent;
             border: none;
-            position: fixed;
-            
 		}
 		.dropdown {
             position: relative;
@@ -70,7 +67,6 @@
 			display: none;
 			position: fixed;
 			background-color: #f9f9f9;
-            margin-top: 5em;
 			min-width: 160px;
 			box-shadow: 0px 8px 16px
 				0px rgba(0, 0, 0, 0.2);
@@ -142,7 +138,6 @@
     <script>
         var url = window.location.href;
         url = url.split('.html')[0];
-        //url = url.substring(0, url.lastIndexOf("."));
         window.history.replaceState( null, null, url );
     function logo(id="PUPLOGO",dt=5000){
         window.addEventListener("load",function(){
