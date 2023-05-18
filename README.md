@@ -6,10 +6,10 @@
 ![Screenshot](Assets/screenshot2.jpg)
 <h6>Main Page:</h6>
 
-![Screenshot](https://github.com/joshuanathanjavier/BSIT_CURRICULUM/blob/main/Assets/screenshot.jpg)
+![Screenshot](Assets/screenshot.jpg)
 <h6>2nd Page:</h6>
 
-![Screenshot](https://github.com/joshuanathanjavier/BSIT_CURRICULUM/blob/main/Assets/screenshot1.jpg)
+![Screenshot](Assets/screenshot1.jpg)
 
 
 
