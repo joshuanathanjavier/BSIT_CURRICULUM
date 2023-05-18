@@ -3,7 +3,7 @@
 <h3>Screenshots:</h3>
 <h6>Accessing Pages:</h6>
 
-![Screenshot](https://github.com/joshuanathanjavier/BSIT_CURRICULUM/blob/main/Assets/screenshot2.jpg)
+![Screenshot](Assets/screenshot2.jpg)
 <h6>Main Page:</h6>
 
 ![Screenshot](https://github.com/joshuanathanjavier/BSIT_CURRICULUM/blob/main/Assets/screenshot.jpg)
