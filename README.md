@@ -1,10 +1,9 @@
-<h1>Hey there, I am Josh</h1>
-<h2>My first website in Integrative Programming and Technologies</h2>
-<h3>👨🏻‍💻 About Me </h3>
+<h1>Hey there, I am Juswa</h1>
+<h2>My First Website in Integrative Programming and Technologies 1👨🏻‍💻</h2>
+<h3>Screenshots:</h3>
+![Main Page:](Assets/screenshot.jpg)
+![2nd Page:](Assets/screenshot1.jpg)
+![Accessing Pages:](Assets/screenshot2.jpg)
 
-- 🔭 &nbsp; I’m currently learning Java, HTML, CSS, Javascript.
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
-- 🎓 &nbsp; Studying Information Technology.
-- 💼 &nbsp; College Student.
-- ✍️ &nbsp; Watching universe and trying out latest design trends as hobbies/side hustles.
-- 😴 &nbsp; I believe, a perfect nap can be the ultimate solution for any stress.
+
+
