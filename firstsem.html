@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <style type="text/css">
-        /*Phone*/
-        @media only screen and (max-width:320px) {
+       @media only screen and (max-width:319px) {
             .dropbtn {
                 position: relative;
 		    }
@@ -11,23 +10,73 @@
                 margin-top: 0.1em;
             }
             h1, h3 {
-                margin-left: 33%;
+                margin-right: -38%;
             }
         }
-        /*Tablet*/
-        /*@media only screen and (min-width:321px) and (max-width:768px) {
+        @media only screen and (min-width:320px) and (max-width:331px)  { 
             .dropbtn {
                 position: relative;
-            }
+		    }
             .dropdown-content {
                 margin-top: 0.1em;
             }
             h1, h3 {
-                margin-right: -30%;
+                margin-left: 20%;
             }
-        }*/
-       /*Desktop*/
-        @media only screen and (min-width:769px) {
+        }
+        @media only screen and (min-width:332px) and (max-width:360px) {
+            .dropbtn {
+                position: relative;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+            h1, h3 {
+                margin-left: 20%;
+            }
+        }
+        @media only screen and (min-width:361px) and (max-width:369px) {
+            .dropbtn {
+                position: relative;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+            h1, h3 {
+                margin-left: 19%;
+            }
+        }
+        @media only screen and (min-width:370px) and (max-width:399px) {
+            .dropbtn {
+                position: relative;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+            h1, h3 {
+                margin-left: 13%;
+            }
+        }
+        @media only screen and (min-width:400px) and (max-width:444px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+            h1, h3 {
+                margin-left: 18%;
+            }
+        }
+        @media only screen and (min-width:445px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }/*
+        @media only screen and (min-width:460px) and (max-width:479px) {
             .dropbtn {
                 position: fixed;
 		    }
@@ -35,6 +84,103 @@
                 margin-top: 5.2em;
             }
         }
+        @media only screen and (min-width:480px) and (max-width:490px)  {   
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:491px) and (max-width:510px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:511px) and (max-width:530px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:531px) and (max-width:550px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:551px) and (max-width:570px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:571px) and (max-width:599px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width:630px) { 
+            .dropbtn {
+                position: fixed;
+            }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+
+        }
+        @media only screen and (min-width:631px) and (max-width:650px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:651px) and (max-width:670px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:671px) and (max-width:690px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:691px) and (max-width:800px) {
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }
+        @media only screen and (min-width:801px)  { 
+            .dropbtn {
+                position: fixed;
+		    }
+            .dropdown-content {
+                margin-top: 5.2em;
+            }
+        }*/
         body {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Assets/pupbg.jpg);
             background-attachment: fixed;
@@ -55,7 +201,6 @@
 			cursor: pointer;
             background-color: transparent;
             border: none;
-            
 		}
 		.dropdown {
             position: relative;
@@ -90,7 +235,6 @@
             border-radius: 50%;
             float: left;
             width: 80px;
-            margin: 0 auto;
         }   
         table {
             background-color: #ffffff;
@@ -99,8 +243,7 @@
             font-size: 0.9em;
             min-width: 400px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
         thead tr {
             background-color: #980000;
@@ -184,7 +327,7 @@
     </span>
 </div>
     <div>
-    <table style="width:50%">
+    <table style="width:50%" class="table">
     <thead>
         <tr>
           <th class="a">Subject Code</th>
