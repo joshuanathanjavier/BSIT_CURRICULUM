@@ -180,26 +180,6 @@
         var url = window.location.href;
         url = url.split('.html')[0];
         window.history.replaceState( null, null, url );
-    function logo(id="PUPLOGO",dt=5000){
-        window.addEventListener("load",function(){
-            var logo=document.getElementById(id),style=document.createElement("style");style.type="text/css";
-            style.innerHTML="@keyframes PulseKey{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.logo{animation-name:PulseKey;animation-timing-function:ease-in-out;animation-duration:1s;animation-fill-mode:both;z-index:1000}";
-            document.head.appendChild(style);set();
-    function set(){
-        logo.classList.remove("logo");setTimeout(function(){logo.classList.add("logo");},100);
-    }
-    var move=0;logo.addEventListener("mouseover",function(){
-        if(move==0){move=1;set();setTimeout(function(){move=0;},1500);}
-    });
-    var time,timer;timing();
-    ["mousedown","mousemove","keypress","scroll","touchstart"].forEach(function(n){
-        document.addEventListener(n,timing,true);
-    });
-    function timing(g){
-        (g===1)?time+=time:time=dt;clearTimeout(timer);timer=setTimeout(function(){set();timing(1);},time);
-    }
-    });} 
-    logo();
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
