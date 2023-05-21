@@ -75,112 +75,7 @@
             .dropdown-content {
                 margin-top: 5.2em;
             }
-        }/*
-        @media only screen and (min-width:460px) and (max-width:479px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
         }
-        @media only screen and (min-width:480px) and (max-width:490px)  {   
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:491px) and (max-width:510px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:511px) and (max-width:530px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:531px) and (max-width:550px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:551px) and (max-width:570px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:571px) and (max-width:599px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:600px) and (max-width:630px) { 
-            .dropbtn {
-                position: fixed;
-            }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-
-        }
-        @media only screen and (min-width:631px) and (max-width:650px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:651px) and (max-width:670px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:671px) and (max-width:690px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:691px) and (max-width:800px) {
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }
-        @media only screen and (min-width:801px)  { 
-            .dropbtn {
-                position: fixed;
-		    }
-            .dropdown-content {
-                margin-top: 5.2em;
-            }
-        }*/
         body {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Assets/pupbg.jpg);
             background-attachment: fixed;
@@ -281,26 +176,6 @@
         var url = window.location.href;
         url = url.split('.html')[0];
         window.history.replaceState( null, null, url );
-    function logo(id="PUPLOGO",dt=5000){
-        window.addEventListener("load",function(){
-            var logo=document.getElementById(id),style=document.createElement("style");style.type="text/css";
-            style.innerHTML="@keyframes PulseKey{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.logo{animation-name:PulseKey;animation-timing-function:ease-in-out;animation-duration:1s;animation-fill-mode:both;z-index:1000}";
-            document.head.appendChild(style);set();
-    function set(){
-        logo.classList.remove("logo");setTimeout(function(){logo.classList.add("logo");},100);
-    }
-    var move=0;logo.addEventListener("mouseover",function(){
-        if(move==0){move=1;set();setTimeout(function(){move=0;},1500);}
-    });
-    var time,timer;timing();
-    ["mousedown","mousemove","keypress","scroll","touchstart"].forEach(function(n){
-        document.addEventListener(n,timing,true);
-    });
-    function timing(g){
-        (g===1)?time+=time:time=dt;clearTimeout(timer);timer=setTimeout(function(){set();timing(1);},time);
-    }
-    });} 
-    logo();
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
